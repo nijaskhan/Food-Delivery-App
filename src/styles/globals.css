@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;700&display=swap');
 
-*{
+* {
     font-family: 'Nunito';
 }
 
@@ -11,6 +11,7 @@
 .grid-rows-2 {
     grid-template-rows: repeat(2, 1fr);
 }
+
 .card1 {
     grid-column: 1 / span 1;
     grid-row: 1 / span 2;
@@ -28,4 +29,39 @@
     top: 45%;
     /* grid-column: 1 / span 1;
     grid-row: 2 / span 1; */
+}
+
+.bannerName {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 28px;
+    /* identical to box height, or 140% */
+    letter-spacing: 0.1px;
+}
+
+.bannerOff {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3.2rem;
+    line-height: 56px;
+    /* identical to box height, or 140% */
+    letter-spacing: 0.1px;
+}
+
+.bannerDesc {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+    letter-spacing: 0.1px;
+    color: #83859C;
+}
+
+.box-shadow {
+    box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.16);
 }

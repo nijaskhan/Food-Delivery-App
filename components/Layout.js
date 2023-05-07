@@ -1,4 +1,3 @@
-import Footer from "./Footer";
 import Navbar from "./Navbar";
 import {useEffect, useState} from 'react'
 
@@ -17,9 +16,8 @@ const Layout = ({children}) => {
         {
             logged ? (
                 <div className="container">
-                <Navbar/>
+                    <Navbar/>
                     {children}
-                <Footer/>
                 </div>
             ) : (
                 <div className="container">

@@ -22,6 +22,10 @@ const Login = () => {
     }
     return (
         <>
+            <Head>
+                <title>Food Delivery | Login</title>
+                <meta name="keywords" content="foodDelivery"/>
+            </Head>
             <section className={`${style.gradientForm}`} style={{ overflowX: 'hidden' }}>
                 <div className="row d-flex justify-content-center align-items-center">
                     <div className="col-xl-12 px-0">
