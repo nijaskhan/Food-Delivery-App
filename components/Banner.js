@@ -1,12 +1,16 @@
 import Image from 'next/image';
 import 'bootstrap/dist/css/bootstrap.css';
+import { useState } from 'react';
 
 const Banner = () => {
+    const [activeBanner, setActive] = useState(false);
+
     return (
         <>
             <section className="container">
                 <div className='row justify-content-center' >
-                    <div className="col-md-6 col-lg-6 col-12 rounded-4 box-shadow my-3 mx-3 mb-md-0 card" style={{ backgroundColor: '#F3F4FF', border: 'none', width: '39rem' }}>
+                    <div className={`col-md-6 col-lg-6 col-12 bannerHoverEffect rounded-4 ${activeBanner ? `box-shadow` : ``} my-3 mx-3 mb-md-0 card`} 
+                    onClick={()=>setActive(!activeBanner)} style={{ backgroundColor: '#F3F4FF', border: 'none', width: '39rem', cursor: 'pointer' }}>
                         <div className="row d-flex">
                             <div className='col-lg-6 col-12 col-md-12'>
                                 <Image src='/banner21.png' className='mt-5 card-img-left' alt='banner' width={353} height={240} />
@@ -29,7 +33,8 @@ const Banner = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-6 col-lg-6 col-12 rounded-4 my-3 mx-2 mb-md-0 card" style={{ backgroundColor: '#F3F4FF', border: 'none', width: '39rem' }}>
+                    <div className={`col-md-6 col-lg-6 col-12 bannerHoverEffect rounded-4 my-3 mx-2 mb-md-0 card ${activeBanner ? `` : `box-shadow`}`} 
+                    onClick={()=> setActive(!activeBanner)} style={{ backgroundColor: '#F3F4FF', border: 'none', width: '39rem', cursor: 'pointer' }}>
                         <div className="row d-flex">
                             <div className='col-lg-6 col-12 col-md-12'>
                                 <Image src='/banner22.png' className='mt-5 card-img-left' alt='banner' width={353} height={240} />
