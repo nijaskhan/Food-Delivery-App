@@ -20,9 +20,9 @@ const Layout = ({children}) => {
                     {children}
                 </div>
             ) : (
-                <div className="container">
+                <>
                     {children}
-                </div>
+                </>
             )
         }
         </>

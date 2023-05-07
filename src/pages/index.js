@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Image from 'next/image';
 import Banner from '../../components/Banner';
 import { useRouter } from 'next/router'
 import { useEffect } from 'react';

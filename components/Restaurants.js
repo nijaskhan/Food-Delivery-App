@@ -24,7 +24,7 @@ const Restaurants = () => {
                     </div>
                     <div className="col-lg-4 col-md-6 col-12 d-flex justify-content-center mb-3">
                         <div class="card rounded-4" style={{ width: '24rem', overflow: 'hidden' }}>
-                            <Image src="/hotel2.png" class="card-img-top" style={{ borderTopLeftRadius: '1rem', borderTopRightRadius: '1rem' }} alt="restaurant-image" width={200} height={200} />
+                            <Image src="/hotel2.png" class="card-img-top cardImage" style={{ borderTopLeftRadius: '1rem', borderTopRightRadius: '1rem' }} alt="restaurant-image" width={200} height={200} />
                             <div class="card-body">
                                 <div className="d-flex justify-content-between align-items-center">
                                     <h5 class="card-title pt-2">Burgers & Pizza</h5>
@@ -49,7 +49,7 @@ const Restaurants = () => {
                     </div>
                     <div className="col-lg-4 col-md-6 col-12 d-flex justify-content-center mb-3">
                         <div class="card rounded-4" style={{ width: '24rem', overflow: 'hidden' }}>
-                            <Image src="/hotel3.png" class="card-img-top" style={{ borderTopLeftRadius: '1rem', borderTopRightRadius: '1rem' }} alt="restaurant-image" width={200} height={200} />
+                            <Image src="/hotel3.png" class="card-img-top cardImage" style={{ borderTopLeftRadius: '1rem', borderTopRightRadius: '1rem' }} alt="restaurant-image" width={200} height={200} />
                             <div class="card-body">
                                 <div className="d-flex justify-content-between">
                                     <h5 class="card-title pt-2">Ninja sushi</h5>
@@ -66,7 +66,7 @@ const Restaurants = () => {
                 <div className='row mb-3'>
                     <div className="col-lg-4 col-md-6 col-12 d-flex justify-content-center mb-3">
                         <div class="card rounded-4" style={{ width: '24rem', overflow: 'hidden' }}>
-                            <Image src="/hotel5.png" class="card-img-top" style={{ borderTopLeftRadius: '1rem', borderTopRightRadius: '1rem' }} alt="restaurant-image" width={200} height={200} />
+                            <Image src="/hotel5.png" class="card-img-top cardImage" style={{ borderTopLeftRadius: '1rem', borderTopRightRadius: '1rem' }} alt="restaurant-image" width={200} height={200} />
                             <div class="card-body">
                                 <div className="d-flex justify-content-between">
                                     <h5 class="card-title pt-2">Sushi Master</h5>
@@ -81,7 +81,7 @@ const Restaurants = () => {
                     </div>
                     <div className="col-lg-4 col-md-6 col-12 d-flex justify-content-center mb-3">
                         <div class="card rounded-4" style={{ width: '24rem', overflow: 'hidden' }}>
-                            <Image src="/hotel7.png" class="card-img-top" style={{ borderTopLeftRadius: '1rem', borderTopRightRadius: '1rem' }} alt="restaurant-image" width={200} height={200} />
+                            <Image src="/hotel7.png" class="card-img-top cardImage" style={{ borderTopLeftRadius: '1rem', borderTopRightRadius: '1rem' }} alt="restaurant-image" width={200} height={200} />
                             <div class="card-body">
                                 <div className="d-flex justify-content-between">
                                     <h5 class="card-title pt-2">Kobe</h5>
@@ -96,7 +96,7 @@ const Restaurants = () => {
                     </div>
                     <div className="col-lg-4 col-md-6 col-12 d-flex justify-content-center mb-3">
                         <div class="card rounded-4" style={{ width: '24rem', overflow: 'hidden' }}>
-                            <Image src="/hotel8.png" class="card-img-top" style={{ borderTopLeftRadius: '1rem', borderTopRightRadius: '1rem' }} alt="restaurant-image" width={200} height={200} />
+                            <Image src="/hotel8.png" class="card-img-top cardImage" style={{ borderTopLeftRadius: '1rem', borderTopRightRadius: '1rem' }} alt="restaurant-image" width={200} height={200} />
                             <div class="card-body">
                                 <div className="d-flex justify-content-between">
                                     <h5 class="card-title pt-2">Japanese Sushi</h5>

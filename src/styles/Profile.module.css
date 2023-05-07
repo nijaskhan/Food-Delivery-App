@@ -1,0 +1,19 @@
+.formCheckLabel {
+    font-size: 1.2rem;
+    letter-spacing: 0.2px;
+    padding-left: 1rem;
+}
+
+.formCheckInput {
+    transform: scale(1.5);
+}
+
+.hoverProfile{
+    cursor: pointer;
+}
+
+.hoverProfile:hover {
+    background-color: #4E60FF;
+    color : #fff;
+    cursor: pointer;
+}

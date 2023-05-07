@@ -1,4 +1,4 @@
-import Image from 'next/image';
+// import Head from 'next/head';
 import 'bootstrap/dist/css/bootstrap.css';
 import Carouselcomp from '../../components/Carousel';
 import { Form } from 'react-bootstrap'
@@ -6,6 +6,7 @@ import { useForm } from 'react-hook-form'
 import style from '../styles/Home.module.css'
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 
 const Login = () => {
     const router = useRouter();
@@ -22,10 +23,10 @@ const Login = () => {
     }
     return (
         <>
-            <Head>
+            {/* <Head>
                 <title>Food Delivery | Login</title>
                 <meta name="keywords" content="foodDelivery"/>
-            </Head>
+            </Head> */}
             <section className={`${style.gradientForm}`} style={{ overflowX: 'hidden' }}>
                 <div className="row d-flex justify-content-center align-items-center">
                     <div className="col-xl-12 px-0">
