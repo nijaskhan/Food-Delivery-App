@@ -1,11 +1,19 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import { Inter } from 'next/font/google';
+import 'react-toastify/dist/ReactToastify.css';
 import styles from '@/styles/Home.module.css';
-
-const inter = Inter({ subsets: ['latin'] })
+import { useRouter } from 'next/router'
+import { useEffect } from 'react';
 
 export default function Home() {
+  // checking if the user exists
+  const router = useRouter();
+
+  useEffect(()=>{
+    if(!localStorage.getItem('user')){
+      router.push('/login');
+    }
+  }, [])
+
   return (
     <>
       <h1>hello world</h1>
