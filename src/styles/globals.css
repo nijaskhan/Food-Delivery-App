@@ -65,3 +65,9 @@
 .box-shadow {
     box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.16);
 }
+
+.menuCard:hover {
+    color: #4747d1;
+    border-color: #4747d1;
+    cursor: pointer;
+}
