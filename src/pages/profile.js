@@ -144,8 +144,12 @@ const Profile = () => {
                         <button className='btn btn-light btn-outline-danger d-lg-none d-md-block d-block p-2 btn-lg rounded-3'>Log Out</button>
                         <div className="col-12 col-md-12 col-lg-8 d-flex pt-3 pt-lg-0">
                             <div className='ms-lg-auto mx-auto'>
-                                <button className='btn btn-outline-secondary p-2 btn-lg rounded-3'>Discard Changes</button>
-                                <button className='btn btn-primary p-2 btn-lg ms-3 rounded-3'>Save Changes</button>
+                                {/* for large and medium screens */}
+                                <button className='btn btn-outline-secondary p-2 btn-md d-lg-none d-md-none rounded-3'>Discard Changes</button>
+                                <button className='btn btn-primary p-2 btn-ms ms-3 d-lg-none d-md-none rounded-3'>Save Changes</button>
+                                {/* for smaller screens */}
+                                <button className='btn btn-outline-secondary p-2 btn-lg d-none d-md-inline rounded-3'>Discard Changes</button>
+                                <button className='btn btn-primary p-2 btn-lg ms-3 d-none d-md-inline rounded-3'>Save Changes</button>
                             </div>
                         </div>
                     </div>

@@ -1,15 +1,19 @@
 import Image from 'next/image'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'remixicon/fonts/remixicon.css'
+import Link from 'next/link';
+import { useState } from 'react';
 
 const Navbar = () => {
+	const [activeLink, setActiveLink] = useState('home');
+
 	return (
 		<>
-		<nav className="navbar navbar-expand-lg bg-white mt-3 ">
+		<nav className="navbar navbar-expand-lg bg-white mt-3">
 			<div className="container">
-				<a className="navbar-brand" href="#">
+				<Link href={'/'} className="navbar-brand">
 					<Image src='/main.png' height={40} width={80} alt='Logo' />
-				</a>
+				</Link>
 
 				<form class="d-flex d-lg-flex d-md-none d-none ms-5">
 					<div className="input-group justify-content-center align-items-center">
@@ -29,9 +33,11 @@ const Navbar = () => {
 							</div>
 						</li>
 						<li className="nav-item ms-4">
-							<div className='position-relative' style={{ backgroundColor: '#e6e6e6', borderRadius: '10px' }}>
-								<Image src='/img.png' alt='avatar' width={47} height={45} style={{ backgroundColor: '#e6e6e6', borderRadius: '15px', padding: '5px' }} />
-							</div>
+							<Link href={'/profile'} onClick={()=> setActiveLink('profile')}>
+								<div className='position-relative' style={{ borderRadius: '10px' }}>
+									<Image src='/img.png' alt='avatar' width={47} height={45} style={{ backgroundColor: '#e6e6e6', borderRadius: '15px', padding: '5px' }} />
+								</div>
+							</Link>
 						</li>
 					</ul>
 				</div>
@@ -41,7 +47,7 @@ const Navbar = () => {
 				<div className="collapse navbar-collapse" id="navbarNav">
 					<ul className="navbar-nav ms-auto align-items-center" style={{ fontWeight: 'bold' }}>
 						<li className="nav-item">
-							<a className="nav-link mx-2 text-dark" href="#!">Restaurants</a>
+							<Link className={`nav-link mx-2 ${activeLink===`home` ? `text-primary` : `text-dark`}`} href={'/'} onClick={()=> setActiveLink('home')}>Restaurants</Link>
 						</li>
 						<li style={{ borderRight: "1px solid #ccc" }} className='d-sm-none d-lg-flex d-md-none d-none'>
 							<a className="nav-link mx-2 text-dark" href="#!">Deals</a>
@@ -64,9 +70,11 @@ const Navbar = () => {
 								</div>
 							</li>
 							<li className="nav-item ms-4">
-								<div className='position-relative' style={{ backgroundColor: '#e6e6e6', borderRadius: '10px' }}>
-									<Image src='/img.png' alt='avatar' width={47} height={45} style={{ backgroundColor: '#e6e6e6', borderRadius: '15px', padding: '5px' }} />
-								</div>
+								<Link href={'/profile'} onClick={()=>setActiveLink('profile')}>
+									<div className={`position-relative ${activeLink==='profile' ? `bg-primary` : `` }`} style={{ borderRadius: '18px' }}>
+										<Image src='/img.png' alt='avatar' width={47} height={45} style={{ backgroundColor: '#e6e6e6', borderRadius: '30px', padding: '5px' }} />
+									</div>
+								</Link>
 							</li>
 						</div>
 					</ul>
