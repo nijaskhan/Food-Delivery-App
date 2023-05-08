@@ -1,6 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import Image from 'next/image';
 import styles from '../styles/Profile.module.css';
+import Link from 'next/link';
+import Router from 'next/router';
 
 const Profile = () => {
     return (
@@ -139,9 +141,15 @@ const Profile = () => {
                     <hr style={{ color: '#a6a6a6', backgroundColor: '#cccccc', height: 2 }} />
                     <div className="row pb-4 py-2 px-3">
                         <div className="col-lg-4 d-none d-lg-block d-md-none">
-                            <button className='btn btn-light btn-outline-danger p-2 btn-lg rounded-3'>Log Out</button>
+                            <button className='btn btn-light btn-outline-danger p-2 btn-lg rounded-3'onClick={()=>{
+                                localStorage.removeItem('user');
+                                Router.push('/login');
+                            }}>Log Out</button>
                         </div>
-                        <button className='btn btn-light btn-outline-danger d-lg-none d-md-block d-block p-2 btn-lg rounded-3'>Log Out</button>
+                        <button className='btn btn-light btn-outline-danger d-lg-none d-md-block d-block p-2 btn-lg rounded-3' onClick={()=>{
+                            localStorage.removeItem('user');
+                            Router.push('/login');
+                        }}>Log Out</button>
                         <div className="col-12 col-md-12 col-lg-8 d-flex pt-3 pt-lg-0">
                             <div className='ms-lg-auto mx-auto'>
                                 {/* for large and medium screens */}
