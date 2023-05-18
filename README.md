@@ -7,6 +7,12 @@ This is a web application template for ordering food delivery, built with Next.j
 - Bootstrap for styling
 - Local storage for storing user information for login check
 
+Have three pages 
+
+- Login
+- Index page with nearby restaurants 
+- profile page
+
 <h1>Getting Started</h1>
 
 1. Clone the repository
