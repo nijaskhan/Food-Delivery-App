@@ -1,5 +1,7 @@
 This is a web application template for ordering food delivery, built with Next.js and React.js.
 
+<h2> Live project can be accessed at : https://food-delivery-app-gules.vercel.app/login </h2>
+
 <h1>Technologies</h1>
 
 - Next.js
